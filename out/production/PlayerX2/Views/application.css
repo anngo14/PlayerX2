@@ -1,0 +1,92 @@
+.bodyBg{
+    -fx-background-image: url("/Assets/videoBackground.jpg");
+	-fx-background-size: cover, auto;
+}
+
+/* WelcomeView */
+#welcomeBg {
+	-fx-background-image: url("/Assets/nasa-Q1p7bh3SHj8-unsplash.jpg");
+	-fx-background-size: cover, auto;
+}
+
+/* HomeView */
+#homeBg{
+    -fx-background-image: url('/Assets/homeBackground.jpg');
+	-fx-background-size: cover, auto;
+}
+
+#defaultTileList .scroll-bar:vertical {
+    -fx-scale-x: 0;
+}
+
+/* FolderExplorerView */
+.list .list-cell:empty{
+   -fx-background-color: white;
+}
+
+#autoPlayBtn{
+    -fx-background-color: white;
+}
+
+#folderBg{
+    -fx-background-image: url("/Assets/musicBackground.jpg");
+	-fx-background-size: cover, auto;
+}
+
+/* NewTileFolderView */
+.choice-box{
+    -fx-font-size: 28;
+}
+
+.choice-box .menu-item > .label {
+    -fx-pref-width: 400;
+}
+
+/* MusicPlayerView */
+#musicPlayerBg {
+	-fx-background-image: url('/Assets/musicPlayer.jpg');
+	-fx-background-size: cover, auto;
+}
+#musicBox {
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,1), 20, 0, 0, 0);
+}
+
+
+
+/* VideoPlayerView */
+.actionBtn{
+    -fx-background-color: rgb(108,117,125);
+    -fx-text-fill: white;
+}
+
+.actionBtn:focused{
+    -fx-background-color: #007bff;
+}
+
+#trackSlider .track{
+    -fx-background-color: rgb(0,0,0,0.7);
+}
+
+#trackSlider .thumb{
+    -fx-background-color: #007bff
+}
+
+#tileList .scroll-bar:vertical {
+    -fx-scale-x: 0;
+}
+
+#deleteBtn{
+    -fx-background-color: #dc3545;
+}
+
+#deleteBtn:focused{
+    -fx-background-color: #007bff;
+}
+
+#editBtn{
+    -fx-background-color: #343a40;
+}
+
+#editBtn:focused{
+    -fx-background-color: #007bff;
+}

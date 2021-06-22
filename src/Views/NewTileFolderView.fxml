@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane id="newTileFolderBg" fx:id="panel" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: black;" styleClass="bodyBg" stylesheets="@application.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="BOTTOM_RIGHT">
+         <image>
+            <Image url="@../Assets/saveicon.png" />
+         </image>
+         <StackPane.margin>
+            <Insets bottom="25.0" right="25.0" />
+         </StackPane.margin>
+      </ImageView>
+      <ImageView fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER">
+         <image>
+            <Image url="@../Assets/uploadicon.png" />
+         </image>
+         <StackPane.margin>
+            <Insets left="600.0" top="200.0" />
+         </StackPane.margin>
+      </ImageView>
+      <ImageView fx:id="backImg" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="TOP_LEFT">
+         <image>
+            <Image url="@../Assets/home.png" />
+         </image>
+         <StackPane.margin>
+            <Insets left="25.0" top="25.0" />
+         </StackPane.margin>
+      </ImageView>
+      <Label alignment="CENTER_RIGHT" focusTraversable="false" text="Title" textAlignment="RIGHT" textFill="#f8f8f8" StackPane.alignment="CENTER">
+         <font>
+            <Font size="40.0" />
+         </font>
+         <StackPane.margin>
+            <Insets bottom="200.0" right="610.0" />
+         </StackPane.margin>
+      </Label>
+      <Label focusTraversable="false" text="Type" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font size="40.0" />
+         </font>
+         <StackPane.margin>
+            <Insets right="610.0" />
+         </StackPane.margin>
+      </Label>
+      <Label alignment="CENTER_RIGHT" focusTraversable="false" prefHeight="0.0" text="Path" textAlignment="RIGHT" textFill="#f8f8f8" StackPane.alignment="CENTER">
+         <font>
+            <Font size="40.0" />
+         </font>
+         <StackPane.margin>
+            <Insets right="610.0" top="200.0" />
+         </StackPane.margin>
+      </Label>
+      <TextField fx:id="titleText" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="58.0" prefWidth="500.0" StackPane.alignment="CENTER">
+         <StackPane.margin>
+            <Insets bottom="200.0" />
+         </StackPane.margin>
+         <font>
+            <Font size="28.0" />
+         </font>
+      </TextField>
+      <ChoiceBox fx:id="typeChoiceBox" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="58.0" prefWidth="500.0" style="-fx-background-color: white;" stylesheets="@application.css" StackPane.alignment="CENTER" />
+      <TextField fx:id="pathText" editable="false" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="58.0" prefWidth="500.0" StackPane.alignment="CENTER">
+         <StackPane.margin>
+            <Insets top="200.0" />
+         </StackPane.margin>
+         <font>
+            <Font size="28.0" />
+         </font>
+      </TextField>
+      <Button mnemonicParsing="false" onAction="#choosePath" prefHeight="58.0" prefWidth="58.0" style="-fx-background-color: transparent;" text="u2" textFill="TRANSPARENT" StackPane.alignment="CENTER">
+         <StackPane.margin>
+            <Insets left="600.0" top="200.0" />
+         </StackPane.margin>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#save" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: transparent;" text="save" textFill="TRANSPARENT" StackPane.alignment="BOTTOM_RIGHT">
+         <StackPane.margin>
+            <Insets bottom="25.0" right="25.0" />
+         </StackPane.margin>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#backAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: transparent;" text="Home" textFill="TRANSPARENT" StackPane.alignment="TOP_LEFT">
+         <StackPane.margin>
+            <Insets left="25.0" top="25.0" />
+         </StackPane.margin>
+      </Button>
+   </children>
+</StackPane>
